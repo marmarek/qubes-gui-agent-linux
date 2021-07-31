@@ -85,7 +85,7 @@
 
 PA_MODULE_AUTHOR("Marek Marczykowski-Górecki");
 PA_MODULE_DESCRIPTION("VCHAN sink/source");
-PA_MODULE_VERSION(PACKAGE_VERSION);
+PA_MODULE_VERSION(PA_EXPAND_AND_STRINGIZE(PA_MAJOR)"."PA_EXPAND_AND_STRINGIZE(PA_MINOR));
 PA_MODULE_LOAD_ONCE(false);
 PA_MODULE_USAGE("sink_name=<name for the sink> "
         "sink_desc=<description string for the sink> "
